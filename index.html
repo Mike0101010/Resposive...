@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blox Fruits - Nota</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url("background.png") no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.7);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.topo {
+  text-align: right;
+}
+
+select {
+  padding: 8px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+#text {
+  max-width: 900px;
+  margin: 40px auto;
+  line-height: 1.7;
+  font-size: 18px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.links {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.links a {
+  margin: 0 15px;
+  color: #ffd700;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+</style>
+</head>
+
+<body>
+
+<div class="overlay">
+
+<div class="topo">
+<select id="language">
+  <option value="pt">Português</option>
+  <option value="en">English</option>
+  <option value="fr">Français</option>
+</select>
+</div>
+
+<div id="text"></div>
+
+<div class="links">
+  <a href="https://x.com/BloxFruits" target="_blank">X</a>
+  <a href="https://youtube.com/@gamerrobot?si=EcR7P1Br-6t7dSM7" target="_blank">YouTube</a>
+  <a href="https://www.tiktok.com/@bloxfruitsofficials" target="_blank">TikTok</a>
+</div>
+
+</div>
+
+<script>
+const textos = {
+
+pt: `<h1>Nota de Esclarecimento 1.0.1</h1>
+
+<p>Bom dia, boa tarde ou boa noite!</p>
+
+<p>Antes de tudo, gostaria de esclarecer que sim, faço parte da equipe de desenvolvimento do Blox Fruits. No entanto, não sou tão ativo publicamente quanto alguns outros membros da equipe, por isso muitos de vocês provavelmente não me conhecem. Atualmente, estou envolvido em diversos projetos dentro do Roblox Studio, mas hoje não vim falar sobre mim.</p>
+
+<p>Quero conversar um pouco sobre a próxima atualização do Blox Fruits.</p>
+
+<p>Primeiramente, peço que mantenham as expectativas sob controle, mas sem desanimar. Na minha visão, esta será uma atualização muito grande e extremamente interessante. Sabemos que nossa equipe nem sempre é a melhor quando o assunto é comunicação com a comunidade, e reconhecemos isso. Porém, também gostamos de guardar algumas surpresas para que a experiência seja mais especial quando chegar o momento certo.</p>
+
+<p>Alguns projetos já nos ensinaram que revelar informações cedo demais pode gerar cobranças e expectativas difíceis de administrar. Por isso, estamos sendo um pouco mais cuidadosos desta vez.</p>
+
+<p>Também gostaria de informar que, a partir de agora, pretendo aparecer semanalmente para responder perguntas da comunidade. Não darei muitos spoilers sobre o futuro do jogo, pois quero que vocês possam se surpreender com as novidades. Além disso, tenho certeza de que o Rip_Indra e o MyGame43 não ficariam muito felizes se eu revelasse tudo antes da hora.</p>
+
+<p>O que posso dizer é que a atualização está avançando melhor do que nunca e que vocês começarão a receber mais informações nas próximas semanas — ou talvez até nos próximos dias. Quem sabe?</p>
+
+<p>Por enquanto, será preciso esperar mais um pouco.</p>
+
+<p>Nos vemos novamente no dia <b>22/06/2026</b>, em uma nova sessão de perguntas e respostas. Aproveito também para agradecer ao meu amigo <b>E_</b>, que vem ajudando a responder a comunidade no Reddit. Não deixem de acompanhar o trabalho dele por lá!</p>
+
+<p>Obrigado pela paciência e pelo apoio de sempre.</p>
+
+<p>Até a próxima!</p>`,
+
+en: `<h1>Clarification Note 1.0.1</h1>
+
+<p>Good morning, good afternoon, or good evening!</p>
+
+<p>First of all, I would like to clarify that yes, I am part of the Blox Fruits development team. However, I am not as publicly active as some other team members, which is why many of you may not know me. I am currently involved in several projects within Roblox Studio, but today I’m not here to talk about myself.</p>
+
+<p>I would like to talk a bit about the next Blox Fruits update.</p>
+
+<p>First, I ask that you keep your expectations under control, but without losing excitement. In my view, this will be a very big and extremely interesting update. We know that our team is not always the best when it comes to communication with the community, and we acknowledge that. However, we also like to keep some surprises so the experience feels more special when the right moment comes.</p>
+
+<p>Some past projects have taught us that revealing information too early can create pressure and expectations that are hard to manage. That’s why we are being a bit more careful this time.</p>
+
+<p>I would also like to say that, from now on, I intend to appear weekly to answer questions from the community. I won’t give many spoilers about the future of the game, because I want you to be surprised by what’s coming. Besides that, I’m sure Rip_Indra and MyGame43 wouldn’t be very happy if I revealed everything ahead of time.</p>
+
+<p>What I can say is that the update is progressing better than ever, and you will start receiving more information in the coming weeks — or maybe even in the next few days. Who knows?</p>
+
+<p>For now, we’ll need to wait a little longer.</p>
+
+<p>We will meet again on <b>June 22, 2026</b>, in a new Q&A session. I would also like to thank my friend <b>E_</b>, who has been helping answer the community on Reddit. Be sure to check out his work there!</p>
+
+<p>Thank you for your patience and continued support.</p>
+
+<p>See you next time!</p>`,
+
+fr: `<h1>Note de clarification 1.0.1</h1>
+
+<p>Bonjour, bon après-midi ou bonsoir !</p>
+
+<p>Tout d'abord, je tiens à préciser que oui, je fais partie de l'équipe de développement de Blox Fruits. Cependant, je ne suis pas aussi actif publiquement que certains autres membres de l'équipe, c'est pourquoi beaucoup d'entre vous ne me connaissent probablement pas. Je suis actuellement impliqué dans plusieurs projets sur Roblox Studio, mais aujourd’hui, je ne suis pas là pour parler de moi.</p>
+
+<p>Je souhaite parler de la prochaine mise à jour de Blox Fruits.</p>
+
+<p>Tout d'abord, je vous demande de garder vos attentes sous contrôle, sans perdre votre enthousiasme. À mon avis, ce sera une mise à jour très importante et extrêmement intéressante. Nous savons que notre équipe n’est pas toujours la meilleure en matière de communication avec la communauté, et nous le reconnaissons. Cependant, nous aimons aussi garder quelques surprises afin de rendre l’expérience plus spéciale au bon moment.</p>
+
+<p>Certains projets passés nous ont appris que révéler des informations trop tôt peut créer des attentes et des pressions difficiles à gérer. C’est pourquoi nous sommes un peu plus prudents cette fois-ci.</p>
+
+<p>Je voudrais également dire qu’à partir de maintenant, j’ai l’intention d’apparaître chaque semaine pour répondre aux questions de la communauté. Je ne donnerai pas beaucoup de spoilers sur l’avenir du jeu, car je veux que vous soyez surpris par les nouveautés. De plus, je suis sûr que Rip_Indra et MyGame43 ne seraient pas très heureux si je révélais tout à l’avance.</p>
+
+<p>Ce que je peux dire, c’est que la mise à jour progresse mieux que jamais et que vous commencerez à recevoir plus d’informations dans les semaines à venir — ou peut-être même dans les prochains jours. Qui sait ?</p>
+
+<p>Pour l’instant, il faudra attendre encore un peu.</p>
+
+<p>Nous nous reverrons le <b>22 juin 2026</b> lors d’une nouvelle session de questions-réponses. Je tiens également à remercier mon ami <b>E_</b>, qui aide la communauté sur Reddit. N’hésitez pas à suivre son travail !</p>
+
+<p>Merci pour votre patience et votre soutien continu.</p>
+
+<p>À la prochaine !</p>`
+};
+
+const select = document.getElementById("language");
+const text = document.getElementById("text");
+
+function mudar() {
+  text.innerHTML = textos[select.value];
+}
+
+select.addEventListener("change", mudar);
+mudar();
+</script>
+
+</body>
+</html>
